@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+    <title>AprendiendoFLEX</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="div1">
+            <p><b class="flex">Flex</b>Playground</p>
+            <div class="botones">
+                <button id="add">+Add div</button><button id="reset">Reset</button>
+            </div>
+            <span>
+                <b>Gap</b>
+                <input class="input-gap" type="number" value="0">
+            </span>
+            <p class="play">Play with the attributes</p>
+            <div class="attributes">
+                <div class="property">
+                    <span>Justify content</span>
+                    <div class="check">
+                        <input id="inputJustify" class="justify" type="checkbox" >
+                        <label id="label1" for="justify">active me!</label>
+                        <label id="label2" for="justify">I'm active!</label>
+                    </div>
+                </div>
+
+            <div id="butons-justify">
+                    <button>Flex start</button>
+                    <button>Space between</button>
+                    <button>Space around</button>
+                    <button>Space evenly</button>
+                    <button>Center</button>
+                    <button>Flex end</button>
+            </div>
+
+                <div class="property">
+                    <span>Align items</span>
+                    <div class="check">
+                        <input id="inputAlign" class="align" type="checkbox">
+                        <label id="label3" for="align">active me!</label>
+                        <label id="label4" for="align" style="display: none;">I'm active!</label>
+
+                    </div>
+                </div>
+
+                <div class="butons-align">
+                    <button>Flex start</button>
+                    <button>Center</button>
+                    <button>Flex end</button>
+                </div>
+
+                <div class="property">
+                    <span>Flex Direction</span>
+                    <div class="check">
+                        <input id="inputDirection" class="Fdirection" type="checkbox">
+                        <label id="label5" for="Fdirection">active me!</label>
+                        <label id="label6" for="Fdirection" style="display: none;">I'm active!</label>
+                    </div>
+                </div>
+
+                <div class="butons-flex-direction">
+                    <button>Row</button>
+                    <button>Column</button>
+                    <button>Row reverse</button>
+                    <button>Column reverse</button>
+                </div>
+
+                <div class="property">
+                    <span>Flex wrap</span>
+                    <div class="check">
+                        <input id="inputWrap" class="Fwrap" type="checkbox">
+                        <label id="label7" for="Fwrap">active me!</label>
+                        <label id="label8" for="Fwrap" style="display: none;">I'm active!</label>
+
+                    </div>
+                </div>
+
+                <div class="butons-flex-wrap">
+                    <button>Nowrap</button>
+                    <button>wrap</button>
+                    <button>Wrap reverse</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="div2">
+                     
+        </div>
+        <div id="div3">
+            <div class="container-padre">
+                <div class="contains">
+                    <button class="buttons">X</button>
+                </div>
+                <div class="contains">
+                    <button class="buttons">X</button>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="flex.js"></script>
+</body>
+
+</html>
