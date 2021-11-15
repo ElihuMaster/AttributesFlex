@@ -136,6 +136,12 @@ input[type='checkbox']:checked:after{
     padding: 5px 5px;
     background-color: rgb(192, 181, 28);
 }
+.block{
+    display: block;
+}
+.none{
+    display: none;
+}
 .container #div2{
     grid-column:  2 / 4; 
     grid-row:  1 / 2;

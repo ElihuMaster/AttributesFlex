@@ -22,20 +22,24 @@ add.addEventListener('click', function () {
     let num = (Math.floor(Math.random() * 10) + 1);
     numeros.push(num)
     console.log(numeros);
-
+    
     let cuadros = `<div class= "barra" 
-                    style= "background: #${pintarColor}">
-                    <button class= "btnx">X</button>
-                    </div>`
+    style= "background: #${pintarColor}">
+    <button class= "btnx">X</button>
+    </div>`
     container.innerHTML += cuadros
-
+    let barra = document.querySelector('.barra')
+    
+        document.querySelector('.btnx').addEventListener('click', function(){
+            barra.remove();
+    })
+    
 })
 
 // button funcinality >> reset
 let vaciarDIV = '';
 let red = document.getElementById('contains1')
 let purple = document.getElementById('contains2')
-let barra = document.querySelector('.barra')
 
 let reset = document.getElementById('reset').addEventListener('click', () => {
     container.innerHTML = vaciarDIV;
@@ -43,10 +47,6 @@ let reset = document.getElementById('reset').addEventListener('click', () => {
 
 let btn1 = document.getElementById('btn1').addEventListener('click', () => {red.remove()})
 let btn2 = document.getElementById('btn2').addEventListener('click', () => {purple.remove()})
-let btn3 = document.querySelector('.btnx')
-    btn3.addEventListener('click', function(){
-        console.log('soy string button');
-    })
 
 // estilos a los checkbox
 let button = document.querySelector('.justify')
