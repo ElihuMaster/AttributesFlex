@@ -1,5 +1,6 @@
 
-    // button functionality >> add
+
+// button functionality >> add
 const container = document.querySelector('.container-padre')
 
 let numeros = []
@@ -27,22 +28,27 @@ add.addEventListener('click', function () {
                     <button class= "btnx">X</button>
                     </div>`
     container.innerHTML += cuadros
-    
+
 })
 
 // button funcinality >> reset
-let reset = document.getElementById('reset')
-reset.addEventListener('click', function(){
-    document.querySelector('.barra').remove();
+let vaciarDIV = '';
+let red = document.getElementById('contains1')
+let purple = document.getElementById('contains2')
+let barra = document.querySelector('.barra')
+
+let reset = document.getElementById('reset').addEventListener('click', () => {
+    container.innerHTML = vaciarDIV;
 })
 
-let btnx = document.querySelector('.buttons')
-    btnx.addEventListener('click', function(){
-        console.log('soy el boton x');
+let btn1 = document.getElementById('btn1').addEventListener('click', () => {red.remove()})
+let btn2 = document.getElementById('btn2').addEventListener('click', () => {purple.remove()})
+let btn3 = document.querySelector('.btnx')
+    btn3.addEventListener('click', function(){
+        console.log('soy string button');
     })
-    
 
-    // estilos a los checkbox
+// estilos a los checkbox
 let button = document.querySelector('.justify')
 button.addEventListener('click', function () {
     if (document.querySelector('.justify').checked) {

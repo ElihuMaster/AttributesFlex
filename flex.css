@@ -161,7 +161,7 @@ input[type='checkbox']:checked:after{
     width: 90%;
     height: 90%;
 }
-.container-padre .contains{
+.container-padre .containsPurple{
     display: flex;
     width: 120px;
     height: 120px;
@@ -170,7 +170,7 @@ input[type='checkbox']:checked:after{
     justify-content: right;
     align-items: flex-start;
 }
-.container-padre .contains:nth-child(1){
+.container-padre .containsRed{
     display: flex;
     width: 120px;
     height: 120px;
@@ -179,7 +179,7 @@ input[type='checkbox']:checked:after{
     justify-content: right;
     align-items: flex-start;
 }
-.contains .buttons{
+.container-padre .buttons{
     background: none;
     border: none;
     color: black;
