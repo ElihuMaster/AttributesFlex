@@ -36,6 +36,7 @@ add.addEventListener('click', function () {
     
 })
 
+
 // button funcinality >> reset
 let vaciarDIV = '';
 let red = document.getElementById('contains1')
