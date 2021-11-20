@@ -25,7 +25,7 @@
             <p class="play">Play with the attributes</p>
             <div class="attributes">
                 <div class="property">
-                    <span>Justify content</span>
+                    <span>• Justify content</span>
                     <div class="check">
                         <input id="inputJustify" class="justify" type="checkbox" >
                         <label id="label1" for="justify">active me!</label>
@@ -34,16 +34,16 @@
                 </div>
 
             <div id="butons-justify">
-                    <button>Flex start</button>
-                    <button>Space between</button>
-                    <button>Space around</button>
-                    <button>Space evenly</button>
-                    <button>Center</button>
-                    <button>Flex end</button>
+                    <button id="start">Flex start</button>
+                    <button id="between">Space between</button>
+                    <button id="around">Space around</button>
+                    <button id="evenly">Space evenly</button>
+                    <button id="center">Center</button>
+                    <button id="end">Flex end</button>
             </div>
 
                 <div class="property">
-                    <span>Align items</span>
+                    <span>• Align items</span>
                     <div class="check">
                         <input id="inputAlign" class="align" type="checkbox">
                         <label id="label3" for="align">active me!</label>
@@ -53,13 +53,13 @@
                 </div>
 
                 <div class="butons-align">
-                    <button>Flex start</button>
-                    <button>Center</button>
-                    <button>Flex end</button>
+                    <button id="a-start">Flex start</button>
+                    <button id="a-center">Center</button>
+                    <button id="a-end">Flex end</button>
                 </div>
 
                 <div class="property">
-                    <span>Flex Direction</span>
+                    <span>• Flex Direction</span>
                     <div class="check">
                         <input id="inputDirection" class="Fdirection" type="checkbox">
                         <label id="label5" for="Fdirection">active me!</label>
@@ -68,14 +68,14 @@
                 </div>
 
                 <div class="butons-flex-direction">
-                    <button>Row</button>
-                    <button>Column</button>
-                    <button>Row reverse</button>
-                    <button>Column reverse</button>
+                    <button id="row">Row</button>
+                    <button id="column">Column</button>
+                    <button id="row-reverse">Row reverse</button>
+                    <button id="column-reverse">Column reverse</button>
                 </div>
 
                 <div class="property">
-                    <span>Flex wrap</span>
+                    <span>• Flex wrap</span>
                     <div class="check">
                         <input id="inputWrap" class="Fwrap" type="checkbox">
                         <label id="label7" for="Fwrap">active me!</label>
@@ -85,26 +85,34 @@
                 </div>
 
                 <div class="butons-flex-wrap">
-                    <button>Nowrap</button>
-                    <button>wrap</button>
-                    <button>Wrap reverse</button>
+                    <button id="nowrap" class="active">Nowrap</button>
+                    <button id="wrap">wrap</button>
+                    <button id="wrap-reverse">Wrap reverse</button>
                 </div>
             </div>
         </div>
 
 
         <div id="div2">
-                     
-        </div>
+            <p>.container{</p> 
+            <p>&nbsp &nbsp display: flex;</p>
+            <div id="justif"></div>    
+            <div id="alig"></div>    
+            <div id="fdir"></div>    
+            <div id="fwr"></div>    
+            <p>}</p>
+        </div> 
+
+
         <div id="div3">
             <div class="container-padre">
                 <div id="contains1" class="containsRed">
                     <button id="btn1" class="buttons">X</button>
                 </div>
+
                 <div id="contains2" class="containsPurple">
                     <button id="btn2" class="buttons">X</button>
-                </div>
-               
+                </div>               
                 
             </div>
             

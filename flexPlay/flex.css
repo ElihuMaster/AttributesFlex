@@ -104,37 +104,22 @@ input[type='checkbox']:checked:after{
     justify-content: center;
     align-items: center;
 }
-#butons-justify{
-    display: none;
-}
-.attributes #butons-justify button{
+.attributes button{
     border-radius: 8px;
     padding: 5px 5px;
     background-color: rgb(192, 181, 28);
+}
+#butons-justify{
+    display: none;
 }
 .butons-align{
     display: none;
 }
-.attributes .butons-align button{
-    border-radius: 8px;
-    padding: 5px 5px;
-    background-color: rgb(192, 181, 28);
-}
 .butons-flex-direction{
     display: none;
 }
-.attributes .butons-flex-direction button{
-    border-radius: 8px;
-    padding: 5px 5px;
-    background-color: rgb(192, 181, 28);
-}
 .butons-flex-wrap{
     display: none;
-}
-.attributes .butons-flex-wrap button{
-    border-radius: 8px;
-    padding: 5px 5px;
-    background-color: rgb(192, 181, 28);
 }
 .block{
     display: block;
@@ -153,6 +138,14 @@ input[type='checkbox']:checked:after{
     background-color: deepskyblue;
 }
 /* contenedor div2 */
+#div2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    letter-spacing: 2px;
+    color: azure;
+    padding: 10px 30px;
+}
 #div3{
     display: flex;
     justify-content: center;
@@ -207,4 +200,69 @@ input[type='checkbox']:checked:after{
     color: black;
     font-weight: bold;
     margin: 5px 5px;
+}
+.justify-start{
+    display: flex;
+    justify-content: flex-start;
+}
+.justify-between{
+    display: flex;
+    justify-content: space-between;
+}
+.justify-around{
+    display: flex;
+    justify-content: space-around;
+}
+.justify-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+.justify-end{
+    display: flex;
+    justify-content: flex-end;
+}
+.align-flex-start{
+    display: flex;
+    align-items: flex-start;
+}
+.align-center{
+    display: flex;
+    align-items: center;
+}
+.align-flex-end{
+    display: flex;
+    align-items: flex-end;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.nowrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrap-reverse{
+    display: flex;
+    flex-wrap: wrap-reverse;
 }
