@@ -1,19 +1,19 @@
 
 // button functionality >> add
 const container = document.querySelector('.container-padre')
-// numbersGap = []
-// function gap (){
-//     valorGAp = document.querySelector('.input-gap').value
-//     if (valorGAp > 0) {
-//         numbersGap = valorGAp.value
-//     }
+let numeros = []
+let numbersGap = []
 
-//     return valorGAp
-// } 
-// console.log(gap());
+function gap (){
+    document.querySelector('.input-gap').addEventListener('click', (event)=>{
+        let valueInput = event.path[0].value;
+        document.getElementById('gp').innerHTML = `<p>&nbsp &nbsp gap: ${valueInput}px</p>`
+        container.style.gap = valueInput +'px'
+    })
+} 
+gap();
 
 let colorHex = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
-let numeros = []
 
 const generaColor = () => {
     let color = "";
@@ -48,8 +48,7 @@ const generaID = ()=>{
             document.getElementById(`boton-${el}`).addEventListener('click', function(){
                 document.getElementById(`cuadro-${el}`).remove();
             })
-        })
-        
+        })        
     }
     
     // button funcinality >> reset
