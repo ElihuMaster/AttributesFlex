@@ -25,7 +25,7 @@ const generaColor = () => {
 }
 
 const generaID = ()=>{
-    return new Date().getTime()
+        return new Date().getTime()
 }
 
     let add = document.getElementById('add')
@@ -46,7 +46,7 @@ const generaID = ()=>{
     function addRemoveButtons(){
         numeros.forEach(el => {
             document.getElementById(`boton-${el}`).addEventListener('click', function(){
-                document.getElementById(`cuadro-${el}`).remove();
+                document.getElementById(`cuadro-${el}`).style.display = 'none';
             })
         })        
     }
@@ -57,11 +57,11 @@ const generaID = ()=>{
     let purple = document.getElementById('contains2')
 
     let reset = document.getElementById('reset').addEventListener('click', () => {
-        container.innerHTML = vaciarDIV;
+        container.innerHTML = vaciarDIV
     })
 
-    let btn1 = document.getElementById('btn1').addEventListener('click', () => { red.remove() })
-    let btn2 = document.getElementById('btn2').addEventListener('click', () => { purple.remove() })
+    let btn1 = document.getElementById('btn1').addEventListener('click', () => {red.style.display = 'none' })
+    let btn2 = document.getElementById('btn2').addEventListener('click', () => {purple.style.display = 'none' })
 
 
     // estilos a los checkbox
